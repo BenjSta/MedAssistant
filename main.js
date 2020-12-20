@@ -1,4 +1,4 @@
-import {GroupModule} from "/modu/GroupModule.js";
+import {GroupModule} from "/MedAssistant/modu/GroupModule.js";
 
 var page_content = $("#page-content");
 var my_first_module = new GroupModule("Bewusstsein", [], [], page_content);
