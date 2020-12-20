@@ -1,4 +1,4 @@
-import {Module} from "./modules/Module.js";
+import {Module} from "/MedAssistant/modules/Module.js";
 
 class GroupModule extends Module {
     constructor(name, modules, replacements, parent_element) {
