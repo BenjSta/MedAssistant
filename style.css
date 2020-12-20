@@ -1,21 +1,22 @@
 :root {
 	/*define colors */
-    --element-color1: snow;
-	--element-color3: paleturquoise;
-	--element-color2: gray;
-	--element-color4: red;
+	--element-color6: snow;
+    --element-color1: deepskyblue;
+	--element-color2: #87CEFA;
+	--element-color3: #87CEFA44;
+	--element-color4: gray;
+	--element-color5: red;
 }
 
 body {
     line-height: 1.7em;
-    color: var(--element-color2);
-	background-color: var(--element-color1);
+    color: var(--element-color4);
+	background-color: var(--element-color6);
     font-size: 13px;
 }
 
 .custom-menu-wrapper {
-    background-color: var(--element-color3);
-    margin-bottom: 2cm;
+    background-color: var(--element-color2);
     white-space: nowrap;
     position: relative;
 }
@@ -29,7 +30,7 @@ body {
 
 .custom-menu .pure-menu-link,
 .custom-menu .pure-menu-heading {
-    color: var(--element-color2);
+    color: var(--element-color4);
 }
 
 .custom-menu .pure-menu-link:hover,
@@ -60,7 +61,7 @@ body {
 }
 
 .custom-menu-toggle .bar {
-    background-color: var(--element-color2);
+    background-color: var(--element-color4);
     display: block;
     width: 20px;
     height: 2px;
@@ -96,7 +97,7 @@ body {
 }
 
 .custom-menu-screen {
-    background-color: var(--element-color3);
+    background-color: var(--element-color2);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;

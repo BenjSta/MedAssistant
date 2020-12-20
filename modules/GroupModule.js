@@ -1,9 +1,13 @@
+import {Module} from "/modules/Module.js";
+
 class GroupModule extends Module {
-    constructor(name, modules, replacements, parent) {
-        super(name, 'GroupModuleGUI.html', parent);
+    constructor(name, modules, replacements, parent_element) {
+        super(name, "/modules/GroupModuleGUI.template.html", parent_element);
         this.modules = modules;
         this.replacements = replacements;
         this.collapsable = false;
         this.view_normal_button = false;
     }
 }
+
+export {GroupModule};
