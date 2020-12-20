@@ -1,12 +1,13 @@
 class Module {
-    constructor(name) {
+    constructor(name, template_file, parent) {
         this.name = name;
-        this.template_file = null;
+        this.template_file = template_file;
+        this.parent = parent;
     }
-    render(target_element){
-        template = $.get(this.template_file);
-        html = Mustache.render(template, this);
-        target_element.append(html);
+    render(){
+        template_string = $.get(this.template_file);
+        html_string = Mustache.render(template_string, this);
+        this.parent.append(html_string);
     }
 }
 
