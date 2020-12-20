@@ -1,6 +1,21 @@
+:root {
+	/*define colors */
+    --element-color1: snow;
+	--element-color3: paleturquoise;
+	--element-color2: gray;
+	--element-color4: red;
+}
+
+body {
+    line-height: 1.7em;
+    color: var(--element-color2);
+	background-color: var(--element-color1);
+    font-size: 13px;
+}
+
 .custom-menu-wrapper {
-    background-color: #808080;
-    margin-bottom: 2.5em;
+    background-color: var(--element-color3);
+    margin-bottom: 2cm;
     white-space: nowrap;
     position: relative;
 }
@@ -14,12 +29,12 @@
 
 .custom-menu .pure-menu-link,
 .custom-menu .pure-menu-heading {
-    color: white;
+    color: var(--element-color2);
 }
 
 .custom-menu .pure-menu-link:hover,
 .custom-menu .pure-menu-heading:hover {
-    background-color: transparent;
+    background-color: var(--element-color1);
 }
 
 .custom-menu-top {
@@ -45,7 +60,7 @@
 }
 
 .custom-menu-toggle .bar {
-    background-color: white;
+    background-color: var(--element-color2);
     display: block;
     width: 20px;
     height: 2px;
@@ -81,7 +96,7 @@
 }
 
 .custom-menu-screen {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--element-color3);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -115,7 +130,7 @@
         position: absolute;
         width: 100%;
         border-top: 1px solid #eee;
-        background-color: #808080\9;
+        background-color: var(--element-color1);
         z-index: 100;
     }
 

@@ -6,12 +6,33 @@
     <meta name="description" content="Showcases a horizontal menu that hides at small window widths, and which scrolls when revealed.">
     <title>MedAssistant</title>
     <link rel="stylesheet" href="third_party/pure-min.css">
-	<link rel="stylesheet" href="third_party/menu.css">
+	<link rel="stylesheet" href="style.css">
 	<script src="third_party/jquery-3.5.1.min.js"></script>
 	<script src="third_party/mustache.js"></script>
 </head>
 <body>
-<script type="text/javascript" src="main.js"></script>
+<div class="custom-menu-wrapper">
+	<div class="pure-menu custom-menu custom-menu-top">
+		<a href="javascript:initialize();" class="pure-menu-heading custom-menu-brand" id="menu-top">MedAssistant</a>
+		<a href="#" class="custom-menu-toggle" id="menu-toggle"><s class="bar"></s><s class="bar"></s></a>
+	</div>
+	<div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="menu">
+	</div>
+	<div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tucked-menu">
+	<div class="custom-menu-screen"></div>
+	<ul class="pure-menu-list", id="menu-items">
+		<li class="pure-menu-item"> <a href="javascript:showAbout();" class="pure-menu-link">Über MedAssistant</a></li>
+		<span id="forms"></span>
+		<li class="pure-menu-item"><a href="#" class="pure-menu-link">Benutzerdefiniertes Formular</a></li>
+	</ul>
+	</div>
+</div>
+
+<div id="page-content">
+</div>
+
 </body>
+<script src="other_js/gui_interactions.js"></script>
+<script src="main.js"></script>
 
 
