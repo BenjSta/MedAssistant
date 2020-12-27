@@ -6,3 +6,4 @@ class Option{
         this.checked = false;
     }
 }
+export {Option}
