@@ -55,7 +55,7 @@ modules:
           - name: "unscharf orientiert"
           - name: "nicht orientiert"
         normal: "orientiert"
-      - name: "Orientierung Person"
+      - name: "Orientierung Situation"
         type: "single choice"
         options:
           - name: "orientiert"
