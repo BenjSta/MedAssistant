@@ -1,11 +1,7 @@
-$("#menu-toggle").get(0).addEventListener('click', function (e) {
-    $("#tucked-menu").get(0).classList.toggle('custom-menu-tucked');
-    $("#menu-toggle").get(0).classList.toggle('x');
+document.getElementById("menu-toggle").addEventListener('click', function (e) {
+    document.getElementById("tucked-menu").classList.toggle('custom-menu-tucked');
+    document.getElementById("menu-toggle").classList.toggle('x');
     });
 
 function showAbout(){
-	$("#page-content").empty();
-	$.get("assets/about.html", function(html_string){
-		$("#page-content").append(html_string);
-	});	
 }

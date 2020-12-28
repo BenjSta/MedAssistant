@@ -1,4 +1,9 @@
 class Module {
+    name;
+    template_file;
+    html_element;
+    heading_button;
+    
     constructor(name, template_file, html_parent_element) {
         this.name = name;
         this.template_file = template_file;

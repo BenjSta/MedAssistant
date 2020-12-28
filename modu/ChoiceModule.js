@@ -6,6 +6,11 @@ class ChoiceModule extends Module {
         this.options = [];
         this.text = [];
         this.multiple = true;
+        var form = document.createElement('form');
+        form.setAttribute('class', 'pure-form pure-form-stacked');
+        this.html_element.appendChild(form);
+        this.options_area = document.createElement('fieldset')
+        form.appendChild(this.options_area)
     }
 }
 export {ChoiceModule};
