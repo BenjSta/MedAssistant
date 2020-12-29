@@ -5,11 +5,10 @@ class Option{
     radio_siblings;
     checkbox;
 
-    constructor(name, text, normal_checked, html_parent_element, 
-                radio_siblings) {
-        this.name = name;
-        this.text = text;
-        this.normal_checked = normal_checked;
+    constructor(yaml_object, html_parent_element, radio_siblings) {
+        this.name = yaml_object.name;
+        this.text = yaml_object.text;
+        this.normal_checked = yaml_object.normal_checked;
         this.checked = false;
         this.radio_siblings = radio_siblings;
 

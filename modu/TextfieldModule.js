@@ -1,3 +1,5 @@
+import {Module} from "/MedAssistant/modu/Module.js";
+
 class TextfieldModule extends Module {
     constructor(name, size, text) {
         super(name);
@@ -6,3 +8,5 @@ class TextfieldModule extends Module {
         this.value = "";
     }
 }
+
+export {TextfieldModule};

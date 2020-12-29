@@ -1,0 +1,24 @@
+name: "Psychopathologischer Befund"
+modules:
+  - name: "Bewusstsein und Orientierung"
+    type: "group"
+    modules:
+      - name: "Quantitative Bewusstseinsteinsstörungen"
+        type: "choice"
+        options: 
+          - name: "wach"
+          - name: "vigilanzgemindert"
+        normal: 1
+        text: "Pat. [option], "
+        mandatory: true
+      - name: "Qualitative Bewusstseinsteinsstörungen"
+        type: "choice"
+        options: 
+          - name: "klar"
+          - name: "Bewusstseinstrübung"
+          - name: "Bewusstseinseinengung"
+          - name: "Bewusstseinsverschiebung"
+        normal: 1
+        text: "[option]."
+        mandatory: true
+          
