@@ -21,4 +21,24 @@ modules:
         normal: 1
         text: "[option]."
         mandatory: true
+      - name: "Qualitative Bewusstseinsteinsstörungen"
+        type: "choice"
+        options: 
+          - name: "klar"
+          - name: "Bewusstseinstrübung"
+          - name: "Bewusstseinseinengung"
+          - name: "Bewusstseinsverschiebung"
+        normal: 1
+        text: "[option]."
+        mandatory: true
+      - name: "Qualitative Bewusstseinsteinsstörungen"
+        type: "choice"
+        options: 
+          - name: "klar"
+          - name: "Bewusstseinstrübung"
+          - name: "Bewusstseinseinengung"
+          - name: "Bewusstseinsverschiebung"
+        normal: 1
+        text: "[option]."
+        mandatory: true
           

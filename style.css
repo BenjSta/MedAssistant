@@ -5,7 +5,7 @@
 	--element-color2: rgba(0, 191, 255, 0.726);
 	--element-color3: rgba(0, 191, 255, 0.219);
 	--element-color4: gray;
-	--element-color5: red;
+	--element-color5: rgb(212, 196, 255);
 }
 
 body {
@@ -81,7 +81,7 @@ body {
 .module-heading{
     background-color: var(--element-color3);
     color: var(--element-color4);
-    padding: 0.5em 2em;
+    padding: 0.5em 0.5em;
     border-radius: 0;
     text-align: left;
     margin-left: 0;
@@ -89,10 +89,7 @@ body {
 }
 
 .module-body{
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
+    padding: 1em 1em;
 }
 
 
@@ -108,36 +105,37 @@ body {
 	text-align: left;
 }
 
-a.pure-button-heading {
+a.module-heading {
     background-color: var(--element-color3);
     color: var(--element-color4);
 	width: 100%;
 	text-align: left;
 	border-radius: 0;
-    margin-left: 0;
+    padding: 0.5em 0.5em;
     font-size: 14pt;
+}
+
+a.module-heading:hover {
+	background-image: unset;
+    background-color: var(--element-color2);
+}
+
+a.module-heading:active {
+	background-image: unset;
+    background-color: var(--element-color2);
+	box-shadow: unset;
+}
+
+a.module-heading:focus {
+	background-image: unset;
+    background-color: var(--element-color2);
+	box-shadow: unset;
 }
 
 input[type="checkbox"] { 
     margin-right: 0.3em; 
 }
 
-a.pure-button-heading:hover {
-	background-image: unset;
-    background-color: var(--element-color2);
-}
-
-a.pure-button-heading:active {
-	background-image: unset;
-    background-color: var(--element-color2);
-	box-shadow: unset;
-}
-
-a.pure-button-heading:focus {
-	background-image: unset;
-    background-color: var(--element-color2);
-	box-shadow: unset;
-}
 
 /*
  * -- SPLASH STYLES --
@@ -203,7 +201,10 @@ a.pure-button-heading:focus {
 
 /* We want to give the content area some more padding */
 .content {
-    padding: 1em 1em 3em;
+    padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-left: 2em;
+    padding-right: 2em;
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -220,7 +221,6 @@ a.pure-button-heading:focus {
 }
 
 .ribbon {
-    font-size: 11pt;
 	padding-top: 0.1em;
 	padding-bottom: 0.1em;
 	padding-left: 2em;
@@ -230,14 +230,27 @@ a.pure-button-heading:focus {
 }
 
 .pure-form fieldset {
-    margin-left: 2em;
+    margin-left: 1em;
     padding: 0;
     border: 0;
 }
 
+
 .module {
     font-size: 12pt;
 	padding: 0;
+    background: var(--element-color3);
+    color: var(--element-color4);
+}
+
+span.module {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 1em;
+    margin-top: 0;
+    margin-bottom:1em;
+    width: 20em;
+    font-size: 12pt;
     background: var(--element-color3);
     color: var(--element-color4);
 }
